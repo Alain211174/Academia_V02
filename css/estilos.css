@@ -1,0 +1,90 @@
+*{ 
+    font-family: "Arimo", sans-serif;
+    
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+b,h1{
+    color: #3c82dd;
+}
+
+button{
+    background: #3c82dd;
+    border: 2px solid #74c0ca;
+    border-radius: 1rem;
+    color: white;
+}
+
+.login-btn{
+    height: 2rem;
+    width: 60%;
+    background: #3c82dd;
+    border: 2px solid #74c0ca;
+    color: white;
+}
+
+button:hover{
+    background: #0e4996;
+    cursor: pointer;
+}
+
+.login-btn:hover{
+    background: #0e4996;
+    cursor: pointer;
+}
+
+button:disabled{
+    background: #485b74;
+    border: 2px solid #27474b;
+}
+
+body{
+    background: #c2f8e6;
+  display: grid;
+  place-items: center; 
+}
+
+.logo{
+    width: 50%;
+}
+
+.logo-IS{
+    width: 10rem;
+}
+
+.contadores{
+    display: flex;
+    gap: 2rem;
+}
+
+.uniLogo{
+    width: 4.5rem;
+    height: 4.5rem;
+    padding-bottom: 1rem;
+}
+
+.uniSec{
+  display: grid;
+  grid-template-rows: 2;
+  margin: 0.5rem;
+}
+
+.contenedorSesion{
+    background-color: #fcf5e1;
+    display: grid;
+    justify-items: center;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    gap: 0.5rem;
+}
+
+input{
+    border-radius: 1rem;
+    border: 2px solid #74c0ca;
+    height: 2rem;
+    width: 100%;
+}
