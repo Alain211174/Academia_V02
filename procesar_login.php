@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
         }
         
         if(!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-            throw new Exception('El formato del correo electrónico no es válido.');
+            throw new Exception('El formato del correo electrónico no es válido. Intente de nuevo');
         }
             
         require_once 'conexion.php';
@@ -48,7 +48,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['login'])) {
                 exit;
                 
             } else {
-                throw new Exception('Contraseña incorrecta.');
+                throw new Exception('Contraseña incorrecta. Intentalo de nuevo');
             }
         } else {
             throw new Exception('Usuario no encontrado. Verifica tu email o regístrate.');
